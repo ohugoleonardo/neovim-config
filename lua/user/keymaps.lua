@@ -12,7 +12,10 @@ map('n', 'q', ':q!<CR>', opts) -- Saída Forçada (Q)
 map('n', '<C-q>', ':wq<CR>', opts) -- Salvar e Sair (Ctrl + Q)
 map('n', '<C-s>', ':write<CR>', opts) -- Salvar Arquivo (Ctrl + S)
 
--- Telescope (Para zer e instalar o plugin)
+-- Telescope (Para fazer e instalar o plugin)
+
+-- Terminal (ToggleTerm)
+map('n', '<C-t>', ':ToggleTerm<CR>', opts)
 
 -- Desfazer no Modo Normal
 map('n', '<C-z>', 'u', opts)
