@@ -19,3 +19,6 @@ map('n', '<C-t>', ':ToggleTerm<CR>', opts)
 
 -- Desfazer no Modo Normal
 map('n', '<C-z>', 'u', opts)
+
+-- Atualizar o Diagnóstico (Inserção)
+map('i', '<C-u>', '<Esc>i', opts)
