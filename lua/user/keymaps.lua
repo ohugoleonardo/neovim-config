@@ -21,4 +21,4 @@ map('n', '<C-t>', ':ToggleTerm<CR>', opts)
 map('n', '<C-z>', 'u', opts)
 
 -- Atualizar o Diagnóstico (Inserção)
-map('i', '<C-u>', '<Esc>i', opts)
+map('i', '<C-u>', '<Esc>i<Right>', opts)
