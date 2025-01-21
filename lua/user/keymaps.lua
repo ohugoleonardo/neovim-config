@@ -17,8 +17,12 @@ map('n', '<C-s>', ':write<CR>', opts) -- Salvar Arquivo (Ctrl + S)
 -- Terminal (ToggleTerm)
 map('n', '<C-t>', ':ToggleTerm<CR>', opts)
 
--- Desfazer no Modo Normal
-map('n', '<C-z>', 'u', opts)
-
 -- Atualizar o Diagnóstico (Inserção)
 map('i', '<C-u>', '<Esc>i<Right>', opts)
+
+-- Mudar do Modo de Inserção para Modo de Seleção
+map("i", "<C-g>", "<Esc>gh", opts)
+
+-- Desfazer/Refazer no Modo de Inserção
+map("i","<C-u>", "<Esc>ui", opts) -- Desfazer
+map("i", "<C-r>", "<Esc><C-r>i", opts) -- Refazer
