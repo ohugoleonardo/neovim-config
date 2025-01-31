@@ -15,3 +15,4 @@ vim.opt.mouse = "a"
 vim.opt.encoding = "UTF-8"
 vim.opt.termguicolors = true
 vim.opt.guifont = ""
+vim.opt.clipboard = "unnamedplus"

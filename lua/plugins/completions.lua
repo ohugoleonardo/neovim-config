@@ -1,7 +1,9 @@
 return {
+  -- Plugin para integrar o LSP ao nvim-cmp
   {
     "hrsh7th/cmp-nvim-lsp"
   },
+  -- Plugin para o LuaSnip
   {
     "L3MON4D3/LuaSnip",
     dependencies = {
@@ -9,6 +11,7 @@ return {
       "rafamadriz/friendly-snippets",
     },
   },
+  -- Plugin para nvim-cmp
   {
     "hrsh7th/nvim-cmp",
     version = false,
@@ -34,13 +37,21 @@ return {
           ["<CR>"] = cmp.mapping.confirm({ select = true }),
         }),
         sources = cmp.config.sources({
-          { name = "nvim_lsp" },
-          { name = "luasnip" },
-          { name = "path" },
+          { name = "nvim_lsp" },  -- Fonte para LSP
+          { name = "luasnip" },   -- Fonte para snippets
+          { name = "path" },      -- Fonte para caminhos de arquivos
         }, {
-          { name = "buffer" },
+          { name = "buffer" },    -- Fonte para buffer
         }),
       })
     end,
   },
+  -- Plugins para as fontes buffer e path
+  {
+    "hrsh7th/cmp-buffer",  -- Fonte para buffer
+  },
+  {
+    "hrsh7th/cmp-path",    -- Fonte para caminhos
+  }
 }
+
