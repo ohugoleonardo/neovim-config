@@ -1,0 +1,8 @@
+- [ ] Criar o script de instalação usando curl e shellscript
+- [ ] Fazer o Arquivo README.md
+- [ ] Adicionar novos LSP's (Lua, Rust, Java, Kotlin e Golang)
+- [ ] Criar uma Dashboard interativa 
+- [ ] Melhorar a integração com Git
+- [ ] Suporte a Cores
+- [ ] Gerenciamento de Tarefas
+- [ ] Auto Formatação
