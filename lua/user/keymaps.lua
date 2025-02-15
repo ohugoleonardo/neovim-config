@@ -18,10 +18,10 @@ map('n', '<C-s>', ':write<CR>', opts) -- Salvar Arquivo (Ctrl + S)
 map('n', '<C-t>', ':ToggleTerm<CR>', opts)
 
 -- Atualizar o Diagnóstico (Inserção)
-map('i', '<C-u>', '<Esc>i<Right>', opts)
+map('i', '<C-v>', '<Esc>i<Right>', opts)
 
 -- Mudar do Modo de Inserção para Modo de Seleção
-map("i", "<C-g>", "<Esc>gh", opts)
+map("i", "<C-g>", "<Esc><Right>gh", opts)
 
 -- Desfazer/Refazer no Modo de Inserção
 map("i","<C-u>", "<Esc>ui", opts) -- Desfazer
